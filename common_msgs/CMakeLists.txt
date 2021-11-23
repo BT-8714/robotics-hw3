@@ -16,7 +16,7 @@ add_message_files(
 # Generate services in the 'srv' folder
 add_service_files(
   FILES
-  AddTwoNum.srv
+  SubTwoNum.srv
 )
 # Generate added messages and services with any dependencies listed here
 generate_messages(
