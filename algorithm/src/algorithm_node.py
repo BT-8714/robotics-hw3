@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 import rospy
-from topic_custom.msg import TimePose
+from common_msgs.msg import TimePose
 
 def callback(msg):
     print "algorithm:", msg.timestamp.secs%40, msg.pose.x, msg.pose.y, msg.pose.theta
