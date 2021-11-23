@@ -13,6 +13,11 @@ add_message_files(
   FILES
   TimePose.msg
 )
+# Generate services in the 'srv' folder
+add_service_files(
+  FILES
+  SubTwoNum.srv
+)
 # Generate added messages and services with any dependencies listed here
 generate_messages(
   DEPENDENCIES
