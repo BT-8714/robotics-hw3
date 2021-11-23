@@ -3,8 +3,8 @@ import rospy
 from geometry_msgs.msg import Pose2D
 from topic_custom.msg import TimePose
 
-rospy.init_node('custom_publisher')
-pub = rospy.Publisher('custom_msg', TimePose, queue_size=1)
+rospy.init_node('sensor_node')
+pub = rospy.Publisher('topic_msg', TimePose, queue_size=1)
 msg = TimePose()
 rate = rospy.Rate(1)
 while not rospy.is_shutdown():
